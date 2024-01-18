@@ -20,7 +20,6 @@ export default function RootLayout({
       <head>
         <title>xapling</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,800&display=swap"
           rel={"stylesheet"}
