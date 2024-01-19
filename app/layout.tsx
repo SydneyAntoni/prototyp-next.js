@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
+import { usePathname } from "next/navigation";
+import NavItem from "@/app/components/NavItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +59,7 @@ export default function RootLayout({
           <button className={styles.buttonLogo}>
             <a href="http://localhost:3000/" className={styles.buttonLogoLink}>
               <img
-                src="/public/xapling-logo.svg"
+                src="/xapling-logo.svg"
                 alt="xapling-logo"
                 width="70px"
                 height="70px"
@@ -67,14 +69,19 @@ export default function RootLayout({
           <nav>
             <ul className={styles.containerNav}>
               <li className={styles.itemNav}>
-                <a className={styles.itemNavLink} href="http://localhost:3000/">
-                  Test
-                </a>
+                <NavItem name={""} />
               </li>
               <li className={styles.itemNav}>
-                <a className={styles.itemNav} href="http://localhost:3000/">
-                  Test2
-                </a>
+                <NavItem name={"Portfolio"} />
+              </li>
+              <li className={styles.itemNav}>
+                <NavItem name={"Kontakt"} />
+              </li>
+              <li className={styles.itemNav}>
+                <NavItem name={"Social"} />
+              </li>
+              <li className={styles.itemNav}>
+                <NavItem name={"Team"} />
               </li>
             </ul>
           </nav>

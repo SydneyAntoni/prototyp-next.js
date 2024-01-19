@@ -46,7 +46,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.itemNavLink {
+.itemNavSelected {
     color: #66B6C1;
     font-family: "Nunito_Sans", sans-serif;
     font-size: 16px;

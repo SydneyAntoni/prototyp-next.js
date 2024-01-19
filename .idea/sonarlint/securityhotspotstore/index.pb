@@ -103,3 +103,17 @@ Q.idea/sonarlint/securityhotspotstore/0/0/00c8fe343d522be82901f8301f0920b81cc8a0
 Q.idea/sonarlint/securityhotspotstore/e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0,7/2/720d611f2ca56268d52029bc318342676ca60ac1
 L
 .github/workflows/nextjs.yml,0/a/0acf5d6c8c042e75886af76b1d1fb11733733731
+=
+app/Image.tsx,7/4/740524ed1c70cb26a0bf3b24cf342f065d86b060
+F
+app/portfolio/page.tsx,e/a/ea4feaa02f11092ebfdec92ee502deed4913e591
+J
+app/components/NavItem.tsx,0/c/0c08923603611b372bb38f1a36ba508c58d29b82
+C
+app/Social/page.tsx,c/c/cc9b19f464f49edac43d96c898e8893ae07dfb6a
+A
+app/Team/page.tsx,d/e/de5be11c78919f4ee2c1eed7421d8fe0159977f3
+D
+app/Kontakt/page.tsx,e/8/e88381e63fcdf058f2a2f2beddd65134433c757d
+F
+app/Portfolio/page.tsx,1/2/120e15bfea13b400b2cd75c29d98b82c9d2c5f88
