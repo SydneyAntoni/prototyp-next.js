@@ -101,3 +101,5 @@ G.idea/sonarlint/issuestore/e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0,b/7/b7
 Q.idea/sonarlint/securityhotspotstore/0/0/00c8fe343d522be82901f8301f0920b81cc8a0b9,d/b/dbaab430f96eced3ca5b8b690a31454f32dcf9e3
 Å
 Q.idea/sonarlint/securityhotspotstore/e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0,7/2/720d611f2ca56268d52029bc318342676ca60ac1
+L
+.github/workflows/nextjs.yml,0/a/0acf5d6c8c042e75886af76b1d1fb11733733731
