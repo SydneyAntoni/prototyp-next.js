@@ -5,6 +5,4 @@ const nextConfig = {
   output: "export",
 };
 
-module.exports = {
-  assetPrefix: "/wallisconsultancy/",
-};
+module.exports = nextConfig;
