@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import styles from "@/app/layout.module.css";
 
 export default function NavItem({ name }: { name: string }) {
-  var currentUrl = usePathname();
+  let currentUrl = usePathname();
   if (currentUrl === "/" + name) {
     return (
       <a
