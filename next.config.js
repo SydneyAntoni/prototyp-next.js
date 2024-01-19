@@ -8,4 +8,6 @@ const nextConfig = {
   output: "export",
 };
 
-module.exports = withMDX(nextConfig);
+module.exports = {
+  assetPrefix: "/wallisconsultancy/",
+};
