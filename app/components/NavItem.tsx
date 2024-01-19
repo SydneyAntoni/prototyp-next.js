@@ -6,10 +6,7 @@ export default function NavItem({ name }: { name: string }) {
   let currentUrl = usePathname();
   if (currentUrl === "/" + name) {
     return (
-      <a
-        className={styles.itemNavSelected}
-        href={"http://localhost:3000/" + name}
-      >
+      <a className={styles.itemNavSelected} href={name}>
         {name === "" ? "xapling" : name}
       </a>
     );

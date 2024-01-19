@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
-import { usePathname } from "next/navigation";
 import NavItem from "@/app/components/NavItem";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,11 +58,11 @@ export default function RootLayout({
           <div className={styles.blauerBalken}></div>
           <button className={styles.buttonLogo}>
             <a href="http://localhost:3000/" className={styles.buttonLogoLink}>
-              <img
+              <Image
                 src="/xapling-logo.svg"
                 alt="xapling-logo"
-                width="70px"
-                height="70px"
+                width="70"
+                height="70"
               />
             </a>
           </button>
