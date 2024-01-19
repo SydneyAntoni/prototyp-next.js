@@ -57,7 +57,7 @@ export default function RootLayout({
           <button className={styles.buttonLogo}>
             <a href="http://localhost:3000/" className={styles.buttonLogoLink}>
               <img
-                src="/xapling-logo.svg"
+                src="/public/xapling-logo.svg"
                 alt="xapling-logo"
                 width="70px"
                 height="70px"
