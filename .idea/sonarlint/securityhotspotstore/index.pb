@@ -107,3 +107,5 @@ D
 app/Kontakt/page.tsx,e/8/e88381e63fcdf058f2a2f2beddd65134433c757d
 F
 app/Portfolio/page.tsx,1/2/120e15bfea13b400b2cd75c29d98b82c9d2c5f88
+Q
+!public/xapling-logo-ohne-Text.svg,3/6/36222b177959369f2fe7de6a48b0905a8e229dc2

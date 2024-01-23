@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
 import NavItem from "@/app/components/NavItem";
 import Image from "next/image";
+import { Nunito_Sans } from "@next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["900", "700", "400"],
+});
 
 export const metadata: Metadata = {
   title: "xapling",
@@ -38,6 +41,7 @@ export default function RootLayout({
           sizes="16x16"
           href="/Favicons/favicon-16x16.png"
         />
+        <link rel="icon" href="/public/xapling-logo-ohne-Text.svg" />
         <link
           rel="mask-icon"
           href="/Favicons/safari-pinned-tab.svg"
@@ -46,7 +50,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={inter.className}>
+      <body className={nunitoSans.className}>
         <header>
           <div className={styles.gruenerBalken}></div>
           <div className={styles.blauerBalken}></div>
