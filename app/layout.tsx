@@ -3,7 +3,7 @@ import "./globals.css";
 import styles from "./layout.module.css";
 import NavItem from "@/app/components/NavItem";
 import Image from "next/image";
-import { Nunito_Sans } from "@next/font/google";
+import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -41,7 +41,6 @@ export default function RootLayout({
           sizes="16x16"
           href="/Favicons/favicon-16x16.png"
         />
-        <link rel="icon" href="/public/xapling-logo-ohne-Text.svg" />
         <link
           rel="mask-icon"
           href="/Favicons/safari-pinned-tab.svg"
