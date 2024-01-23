@@ -9,20 +9,12 @@
 next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 ?
 app/globals.css,4/d/4dfa49b1332116153eb16507891285845e9ab86e
-E
-public/stylesheet.css,1/7/17dabc64aa19b919457fb67e37da2a0afffce69d
 G
 public/xapling-logo.svg,4/b/4b3c4c26111afadfa0f713e8615db99cf50c2a2d
 C
 app/page.module.css,0/0/00c8fe343d522be82901f8301f0920b81cc8a0b9
 B
 tailwind.config.ts,5/2/52c961376029165b06e7861b1dc68c3b2455eeff
-F
-app/mdx-components.tsx,d/4/d4f5703c4394addb4423c6f42ae4528d78cc10b0
-E
-app/mdx-page/page.mdx,b/8/b8b3d4e8220ded6872edc73457a440702801d958
-F
-app/layout.module..css,8/6/86ff0c893b2508897e33b9519f988ba87a587365
 E
 app/layout.module.css,c/b/cbdb2781fd0e4142e6829c0081926643979c6417
 A
@@ -103,8 +95,6 @@ Q.idea/sonarlint/securityhotspotstore/0/0/00c8fe343d522be82901f8301f0920b81cc8a0
 Q.idea/sonarlint/securityhotspotstore/e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0,7/2/720d611f2ca56268d52029bc318342676ca60ac1
 L
 .github/workflows/nextjs.yml,0/a/0acf5d6c8c042e75886af76b1d1fb11733733731
-=
-app/Image.tsx,7/4/740524ed1c70cb26a0bf3b24cf342f065d86b060
 F
 app/portfolio/page.tsx,e/a/ea4feaa02f11092ebfdec92ee502deed4913e591
 J

@@ -21,12 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>xapling</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,800&display=swap"
-          rel={"stylesheet"}
-        />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"
