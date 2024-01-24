@@ -12,10 +12,7 @@ export default function NavItem({ name }: { name: string }) {
     );
   } else {
     return (
-      <a
-        className={styles.itemNav}
-        href={"/sydneyantoni.github.io/prototyp-next.js/" + name}
-      >
+      <a className={styles.itemNav} href={"/prototyp-next.js/" + name}>
         {name === "" ? "xapling" : name}
       </a>
     );
