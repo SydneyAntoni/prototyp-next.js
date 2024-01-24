@@ -54,6 +54,7 @@ export default function RootLayout({
           <div className={styles.gruenerBalken}></div>
           <div className={styles.blauerBalken}></div>
           <button className={styles.buttonLogo}>
+            {/*<a href="/localhost:3000" className={styles.buttonLogoLink}>*/}
             <a href="/prototyp-next.js/" className={styles.buttonLogoLink}>
               <Image
                 src="/xapling-logo.svg"
