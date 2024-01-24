@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <Image
-      src={"/alle.png"}
+      src={"../../public/alle.png"}
       alt={"Portfolio"}
       width={"1188"}
       height={"509"}
