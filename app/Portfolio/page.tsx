@@ -9,7 +9,6 @@ export default function Home() {
       width={"1188"}
       height={"509"}
       unoptimized={true}
-      objectPosition={"auto"}
       className={styles.portfolio}
     />
   );
