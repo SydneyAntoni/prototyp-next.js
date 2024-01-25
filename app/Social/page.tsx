@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1 style={{ margin: "auto" }}>Social</h1>;
+  return <h1 style={{ margin: "auto", textAlign: "center" }}>Social</h1>;
 }

@@ -95,3 +95,15 @@ Q
 !public/xapling-logo-ohne-Text.svg,3/6/36222b177959369f2fe7de6a48b0905a8e229dc2
 M
 app/Portfolio/page.module.css,7/8/7876ff94d213b10cee838331e0ef08043d752356
+J
+components/ui/carousel.tsx,2/5/2571fcb7f61b4b3165d44a1553166108f8e0c7b1
+F
+components/NavItem.tsx,b/8/b89914ef81f64bdb071a6371c479aa7fa1834175
+H
+components/ui/button.tsx,3/4/3458df31a91148610907473abf3c4992d53d9bae
+?
+components.json,c/7/c77795c1a93b077ad2aef052b6a976d9dc92f5b8
+<
+lib/utils.ts,a/8/a85a9c0c67fa0e2a77f6d0f1448fb126c61bbc18
+K
+components/AutoCarousel.tsx,5/2/526e291f2979156629d04fcbb05a4532cb4ebf51

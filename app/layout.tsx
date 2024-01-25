@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import styles from "./layout.module.css";
-import NavItem from "@/app/components/NavItem";
+import NavItem from "@/components/NavItem";
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 
@@ -12,6 +12,7 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata: Metadata = {
   title: "xapling",
+  description: "xaplings Website",
 };
 
 export default function RootLayout({
@@ -56,7 +57,7 @@ export default function RootLayout({
             {/*<a href="/localhost:3000" className={styles.buttonLogoLink}>*/}
             <a href="/prototyp-next.js/" className={styles.buttonLogoLink}>
               <Image
-                src="/prototyp-next.js/xapling-logo.svg"
+                src="../xapling-logo.svg"
                 alt="xapling-logo"
                 width="70"
                 height="70"
