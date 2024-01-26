@@ -3,7 +3,7 @@
     display: flex;
     text-align: center;
     flex-direction: column-reverse;
-    background-image: url("/Hintergrund1.png");
+    background-image: url("/prototyp-next.js/Hintergrund1.png");
     height: 600px;
     max-width: 100%;
     max-height: 100%;

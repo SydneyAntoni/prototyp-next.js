@@ -107,3 +107,5 @@ H
 lib/utils.ts,a/8/a85a9c0c67fa0e2a77f6d0f1448fb126c61bbc18
 K
 components/AutoCarousel.tsx,5/2/526e291f2979156629d04fcbb05a4532cb4ebf51
+F
+components/ui/card.tsx,7/9/79f0a50bd3f074b5392c67c55d393d0a58a09656
