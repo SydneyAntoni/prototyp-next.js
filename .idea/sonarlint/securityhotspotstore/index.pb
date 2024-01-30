@@ -95,17 +95,25 @@ Q
 !public/xapling-logo-ohne-Text.svg,3/6/36222b177959369f2fe7de6a48b0905a8e229dc2
 M
 app/Portfolio/page.module.css,7/8/7876ff94d213b10cee838331e0ef08043d752356
-J
-components/ui/carousel.tsx,2/5/2571fcb7f61b4b3165d44a1553166108f8e0c7b1
-F
-components/NavItem.tsx,b/8/b89914ef81f64bdb071a6371c479aa7fa1834175
-H
-components/ui/button.tsx,3/4/3458df31a91148610907473abf3c4992d53d9bae
 ?
 components.json,c/7/c77795c1a93b077ad2aef052b6a976d9dc92f5b8
 <
 lib/utils.ts,a/8/a85a9c0c67fa0e2a77f6d0f1448fb126c61bbc18
-K
-components/AutoCarousel.tsx,5/2/526e291f2979156629d04fcbb05a4532cb4ebf51
+C
+ui/AutoCarousel.tsx,5/a/5a69c7e08687ef2235fb2ef7de4792b3b73f89f4
+?
+ui/carousel.tsx,0/4/04b0cc88a6d08e2190475c01f0a1520585dd3c30
+I
+app/components/button.tsx,3/9/39db04e3ac4b9ea710fb3bc696a785a1d045fb46
+G
+app/components/card.tsx,2/a/2a7fd46a96c9b0cf5cc0312d4d1fb7a9f897f4e4
+N
+components/ui/AutoCarousel.tsx,8/7/87c970fa57137483b5afc588e1d913719aaab289
 F
-components/ui/card.tsx,7/9/79f0a50bd3f074b5392c67c55d393d0a58a09656
+components/NavItem.tsx,b/8/b89914ef81f64bdb071a6371c479aa7fa1834175
+J
+components/ui/carousel.tsx,2/5/2571fcb7f61b4b3165d44a1553166108f8e0c7b1
+E
+components/button.tsx,3/c/3cb03de4b35f5295662cb4cd25665c6e4454f32d
+C
+components/card.tsx,f/7/f7435e240e380ac682ae32c724ed54549908c3b9

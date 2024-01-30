@@ -2,7 +2,7 @@
 import Autoplay from "embla-carousel-autoplay";
 import * as React from "react";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/card";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export default function AutoCarousel() {
   const plugin = React.useRef(
@@ -25,10 +26,17 @@ export default function AutoCarousel() {
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
+            <div className="">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                <CardContent>
+                  <Image
+                    src={"/Hintergrund1.png"}
+                    alt={"Hintergrund"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "auto", height: "100px" }}
+                  />
                 </CardContent>
               </Card>
             </div>

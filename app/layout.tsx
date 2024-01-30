@@ -27,37 +27,38 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/prototyp-next.js/Favicons/apple-touch-icon.png"
+          href="Favicons/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/prototyp-next.js/Favicons/favicon-32x32.png"
+          href="/Favicons/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/prototyp-next.js/Favicons/favicon-16x16.png"
+          href="/Favicons/favicon-16x16.png"
         />
         <link
           rel="mask-icon"
-          href="/prototyp-next.js/Favicons/safari-pinned-tab.svg"
+          href="/Favicons/safari-pinned-tab.svg"
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
+        <base href="https://sydneyantoni.github.io/prototyp-next.js/" />
+        {/*<base href="" />*/}
       </head>
       <body className={nunitoSans.className}>
         <header>
           <div className={styles.gruenerBalken}></div>
           <div className={styles.blauerBalken}></div>
           <button className={styles.buttonLogo}>
-            {/*<a href="/localhost:3000" className={styles.buttonLogoLink}>*/}
-            <a href="/prototyp-next.js/" className={styles.buttonLogoLink}>
+            <a href="" className={styles.buttonLogoLink}>
               <Image
-                src="/prototyp-next.js/xapling-logo.svg"
+                src="/xapling-logo.svg"
                 alt="xapling-logo"
                 width="70"
                 height="70"

@@ -1,11 +1,11 @@
 import styles from "./page.module.css";
-import AutoCarousel from "@/components/AutoCarousel";
+import AutoCarousel from "@/components/ui/AutoCarousel";
 
 export default function Home() {
   return (
     <main>
       {/*Willkommens Banner*/}
-      <AutoCarousel></AutoCarousel>
+      <AutoCarousel />
       <section className={styles.containerBanner}>
         <h1 className={styles.willkommen}>bei xapling</h1>
         <h1 className={styles.willkommen}>Herzlich Willkommen</h1>
