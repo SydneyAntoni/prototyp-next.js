@@ -3,7 +3,6 @@ const { images } = require("next/dist/build/webpack/config/blocks/images");
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
-  // basePath: "/prototyp-next.js",
 };
 
 module.exports = nextConfig;
