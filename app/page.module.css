@@ -21,8 +21,7 @@
     margin: 0;
 }
 .circleSVG{
-    margin: auto;
-    margin-bottom: -130px;
+    margin: auto auto -130px;
 }
 .circle1{
     cx: 90;
@@ -65,12 +64,12 @@
     height: 392px;
 }
 .containerTitle1 {
-    background: var(--xapling-gruen-hell, #ECF3DB);
-    color: var(--xapling-gruen, #A2C554);
+    background: #ECF3DB;
+    color: #A2C554;
     flex: 50%;
 }
 .containerTitle2 {
-    background: var(--xapling-blau-hell, #DFF0F2);
+    background: #DFF0F2;
     flex: 50%;
 }
 .containerInnerTitle1 {
@@ -83,7 +82,7 @@
     margin-top: 70px;
 }
 .containerInnerTitle2 {
-    color: var(--xapling-blau, #66B6C1);
+    color: #66B6C1;
     float: left;
     text-align: center;
     font-size: 60px;
@@ -104,7 +103,7 @@
     margin: 64px 20% 32px 110px;
 }
 .containerInnerText2{
-    margin: 64px 110px 0px 20%;
+    margin: 64px 110px 0 20%;
 }
 
 /*Google Zitat*/
@@ -116,7 +115,7 @@
     text-align: center;
 }
 .containerMark {
-    color: var(--xapling-gruen, #A2C554);
+    color: #A2C554;
     font-size: 200px;
     font-weight: 700;
     line-height: 60px;

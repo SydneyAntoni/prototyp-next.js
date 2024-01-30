@@ -1,20 +1,25 @@
 "use client";
 import { usePathname } from "next/navigation";
 import styles from "@/app/layout.module.css";
+import React, { ReactNode } from "react";
 
-export default function NavItem({ name }: { name: string }) {
-  let currentUrl = usePathname();
-  if (currentUrl === "/" + name) {
-    return (
-      <a className={styles.itemNavSelected} href={name}>
-        {name === "" ? "xapling" : name}
-      </a>
-    );
-  } else {
-    return (
-      <a className={styles.itemNav} href={name}>
-        {name === "" ? "xapling" : name}
-      </a>
-    );
-  }
+interface Props {
+  children: ReactNode;
+  name: string;
 }
+
+const NavItem = ({ children, name }: Props) => {
+  let currentUrl = usePathname();
+  return (
+    <a
+      className={
+        currentUrl === "/" + name ? styles.itemNavSelected : styles.itemNav
+      }
+      href={name}
+    >
+      {children}
+    </a>
+  );
+};
+
+export default NavItem;

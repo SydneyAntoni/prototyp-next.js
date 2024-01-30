@@ -15,7 +15,6 @@
 .buttonLogo {
     background: rgba(0, 0, 0, 0.0);
     border: none;
-    postion: fixed;
     margin: 15px;
     width: 70px;
     height: 70px;
@@ -69,8 +68,7 @@
     border-color: #606060;
     border-top: solid;
     border-top-width: 1px;
-    margin: 0px 60px 0px 60px;
-    padding: 0px;
+    margin: 0 60px;
     list-style-type: none;
 }
 

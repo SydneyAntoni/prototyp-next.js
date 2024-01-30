@@ -4,6 +4,7 @@ import styles from "./layout.module.css";
 import NavItem from "@/app/components/NavItem";
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
+import React from "react";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -20,6 +21,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // let baseSrc = "/prototyp-next.js";
+  let baseSrc = "";
   return (
     <html lang="en">
       <head>
@@ -27,29 +30,29 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={"../../prototyp-next.js/Favicons/apple-touch-icon.png"}
+          href={baseSrc + "/Favicons/apple-touch-icon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={"../../prototyp-next.js/Favicons/favicon-32x32.png"}
+          href={baseSrc + "/Favicons/favicon-32x32.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={"../../prototyp-next.js/Favicons/favicon-16x16.png"}
+          href={baseSrc + "/Favicons/favicon-16x16.png"}
         />
         <link
           rel="mask-icon"
-          href={"../../prototyp-next.js/Favicons/safari-pinned-tab.svg"}
+          href={baseSrc + "/Favicons/safari-pinned-tab.svg"}
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
-        <base href="https://sydneyantoni.github.io/prototyp-next.js/" />
-        {/*<base href="" />*/}
+        {/*<base href="https://sydneyantoni.github.io/prototyp-next.js/" />*/}
+        <base href="http://localhost:3000/" />
       </head>
       <body className={nunitoSans.className}>
         <header>
@@ -58,7 +61,7 @@ export default function RootLayout({
           <button className={styles.buttonLogo}>
             <a href="" className={styles.buttonLogoLink}>
               <Image
-                src="../../prototyp-next.js/xapling-logo.svg"
+                src={baseSrc + "/xapling-logo.svg"}
                 alt="xapling-logo"
                 width="70"
                 height="70"
@@ -68,19 +71,19 @@ export default function RootLayout({
           <nav>
             <ul className={styles.containerNav}>
               <li className={styles.itemNav}>
-                <NavItem name={""} />
+                <NavItem name={""}>xapling</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Portfolio"} />
+                <NavItem name={"Portfolio"}>Portfolio</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Kontakt"} />
+                <NavItem name={"Kontakt"}>Kontakt</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Social"} />
+                <NavItem name={"Social"}>Social</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Team"} />
+                <NavItem name={"Team"}>Team</NavItem>
               </li>
             </ul>
           </nav>
