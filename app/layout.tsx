@@ -51,8 +51,8 @@ export default function RootLayout({
         />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
-        {/*<base href="https://sydneyantoni.github.io/prototyp-next.js/" />*/}
-        <base href="http://localhost:3000/" />
+        <base href="https://sydneyantoni.github.io/prototyp-next.js/" />
+        {/*<base href="http://localhost:3000/" />*/}
       </head>
       <body className={nunitoSans.className}>
         <header>
