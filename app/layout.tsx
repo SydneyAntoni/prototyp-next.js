@@ -21,8 +21,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // let baseSrc = "/prototyp-next.js";
-  let baseSrc = "";
+  let baseSrc = "/prototyp-next.js";
+  // let baseSrc = "http://localhost:3000/";
   return (
     <html lang="en">
       <head>
