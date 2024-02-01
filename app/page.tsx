@@ -7,13 +7,7 @@ export default function Home() {
         <h1 className={styles.willkommen}>bei xapling</h1>
         <h1 className={styles.willkommen}>Herzlich Willkommen</h1>
 
-        {/*Sowas immer auslagern ins CSS. Stört den Lesefluss.*/}
-        <svg
-          className={styles.circleSVG}
-          xmlns="http://www.w3.org/2000/svg"
-          width="180"
-          height="20"
-        >
+        <svg className={styles.circleSVG}>
           <circle className={styles.circle1} />
           <circle className={styles.circle2} />
           <circle className={styles.circle3} />

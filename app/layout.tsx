@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import styles from "./layout.module.css";
-import NavItem from "@/app/components/NavItem";
+import NavItem from "@/app/components/Button";
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 import React from "react";
+import "dotenv/config";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -21,8 +22,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let baseSrc = "/prototyp-next.js";
-  // let baseSrc = "http://localhost:3000/";
   return (
     <html lang="en">
       <head>
@@ -30,29 +29,28 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={baseSrc + "/Favicons/apple-touch-icon.png"}
+          href={process.env.BASE_URL + "/Favicons/apple-touch-icon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={baseSrc + "/Favicons/favicon-32x32.png"}
+          href={process.env.BASE_URL + "/Favicons/favicon-32x32.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={baseSrc + "/Favicons/favicon-16x16.png"}
+          href={process.env.BASE_URL + "/Favicons/favicon-16x16.png"}
         />
         <link
           rel="mask-icon"
-          href={baseSrc + "/Favicons/safari-pinned-tab.svg"}
+          href={process.env.BASE_URL + "/Favicons/safari-pinned-tab.svg"}
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
-        <base href="https://sydneyantoni.github.io/prototyp-next.js/" />
-        {/*<base href="http://localhost:3000/" />*/}
+        <base href={process.env.BASE_URL} />
       </head>
       <body className={nunitoSans.className}>
         <header>
@@ -61,7 +59,7 @@ export default function RootLayout({
           <button className={styles.buttonLogo}>
             <a href="" className={styles.buttonLogoLink}>
               <Image
-                src={baseSrc + "/xapling-logo.svg"}
+                src={process.env.BASE_URL + "/xapling-logo.svg"}
                 alt="xapling-logo"
                 width="70"
                 height="70"
@@ -71,19 +69,19 @@ export default function RootLayout({
           <nav>
             <ul className={styles.containerNav}>
               <li className={styles.itemNav}>
-                <NavItem name={""}>xapling</NavItem>
+                <NavItem link={"/"}>xapling</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Portfolio"}>Portfolio</NavItem>
+                <NavItem link={"/Portfolio"}>Portfolio</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Kontakt"}>Kontakt</NavItem>
+                <NavItem link={"/Kontakt"}>Kontakt</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Social"}>Social</NavItem>
+                <NavItem link={"/Social"}>Social</NavItem>
               </li>
               <li className={styles.itemNav}>
-                <NavItem name={"Team"}>Team</NavItem>
+                <NavItem link={"/Team"}>Team</NavItem>
               </li>
             </ul>
           </nav>

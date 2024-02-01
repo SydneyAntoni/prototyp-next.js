@@ -5,21 +5,19 @@ import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  name: string;
+  link: string;
 }
 
-const NavItem = ({ children, name }: Props) => {
+const Button = ({ children, link }: Props) => {
   let currentUrl = usePathname();
   return (
     <a
-      className={
-        currentUrl === "/" + name ? styles.itemNavSelected : styles.itemNav
-      }
-      href={name}
+      className={currentUrl === link ? styles.itemNavSelected : styles.itemNav}
+      href={link}
     >
       {children}
     </a>
   );
 };
 
-export default NavItem;
+export default Button;
