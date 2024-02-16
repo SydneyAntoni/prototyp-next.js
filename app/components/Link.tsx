@@ -10,14 +10,11 @@ interface Props {
 
 const Link = ({ children, link }: Props) => {
   let currentUrl = usePathname();
+  console.log(process.env.BASE_URL);
   return (
     <a
-      className={
-        currentUrl === process.env.BASE_URL + link
-          ? styles.itemNavSelected
-          : styles.itemNav
-      }
-      href={process.env.BASE_URL + link}
+      className={currentUrl === link ? styles.itemNavSelected : styles.itemNav}
+      href={link}
     >
       {children}
     </a>
