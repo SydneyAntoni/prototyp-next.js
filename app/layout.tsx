@@ -59,9 +59,9 @@ export default function RootLayout({
             <div className={styles.blauerBalken}></div>
           </div>
           <button className={styles.buttonLogo}>
-            <a href="" className={styles.buttonLogoLink}>
+            <a href={process.env.BASE_URL} className={styles.buttonLogoLink}>
               <Image
-                src={process.env.BASE_URL + "/xapling-logo.svg"}
+                src={process.env.BASE_URL + "xapling-logo.svg"}
                 alt="xapling-logo"
                 width="70"
                 height="70"
@@ -71,19 +71,19 @@ export default function RootLayout({
           <nav>
             <ul className={styles.containerNav}>
               <li className={styles.itemNav}>
-                <Link link={"/"}>xapling</Link>
+                <Link link={""}>xapling</Link>
               </li>
               <li className={styles.itemNav}>
-                <Link link={"/Portfolio"}>Portfolio</Link>
+                <Link link={"Portfolio"}>Portfolio</Link>
               </li>
               <li className={styles.itemNav}>
-                <Link link={"/Kontakt"}>Kontakt</Link>
+                <Link link={"Kontakt"}>Kontakt</Link>
               </li>
               <li className={styles.itemNav}>
-                <Link link={"/Social"}>Social</Link>
+                <Link link={"Social"}>Social</Link>
               </li>
               <li className={styles.itemNav}>
-                <Link link={"/Team"}>Team</Link>
+                <Link link={"Team"}>Team</Link>
               </li>
             </ul>
           </nav>

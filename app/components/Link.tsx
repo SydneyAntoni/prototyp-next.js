@@ -12,8 +12,12 @@ const Link = ({ children, link }: Props) => {
   let currentUrl = usePathname();
   return (
     <a
-      className={currentUrl === link ? styles.itemNavSelected : styles.itemNav}
-      href={link}
+      className={
+        currentUrl === process.env.BASE_URL + link
+          ? styles.itemNavSelected
+          : styles.itemNav
+      }
+      href={process.env.BASE_URL + link}
     >
       {children}
     </a>
