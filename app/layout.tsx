@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import styles from "./layout.module.css";
-import NavItem from "@/app/components/Button";
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 import React from "react";
 import "dotenv/config";
+import Link from "@/app/components/Link";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -54,8 +54,10 @@ export default function RootLayout({
       </head>
       <body className={nunitoSans.className}>
         <header>
-          <div className={styles.gruenerBalken}></div>
-          <div className={styles.blauerBalken}></div>
+          <div className={styles.xaplingBalken}>
+            <div className={styles.gruenerBalken}></div>
+            <div className={styles.blauerBalken}></div>
+          </div>
           <button className={styles.buttonLogo}>
             <a href="" className={styles.buttonLogoLink}>
               <Image
@@ -69,19 +71,19 @@ export default function RootLayout({
           <nav>
             <ul className={styles.containerNav}>
               <li className={styles.itemNav}>
-                <NavItem link={"/"}>xapling</NavItem>
+                <Link link={"/"}>xapling</Link>
               </li>
               <li className={styles.itemNav}>
-                <NavItem link={"/Portfolio"}>Portfolio</NavItem>
+                <Link link={"/Portfolio"}>Portfolio</Link>
               </li>
               <li className={styles.itemNav}>
-                <NavItem link={"/Kontakt"}>Kontakt</NavItem>
+                <Link link={"/Kontakt"}>Kontakt</Link>
               </li>
               <li className={styles.itemNav}>
-                <NavItem link={"/Social"}>Social</NavItem>
+                <Link link={"/Social"}>Social</Link>
               </li>
               <li className={styles.itemNav}>
-                <NavItem link={"/Team"}>Team</NavItem>
+                <Link link={"/Team"}>Team</Link>
               </li>
             </ul>
           </nav>
@@ -97,8 +99,10 @@ export default function RootLayout({
               Copyright by xapling. Alle Rechte vorbehalten.
             </li>
           </ul>
-          <div className={styles.gruenerBalken}></div>
-          <div className={styles.blauerBalken}></div>
+          <div className={styles.xaplingBalken}>
+            <div className={styles.gruenerBalken}></div>
+            <div className={styles.blauerBalken}></div>
+          </div>
         </footer>
       </body>
     </html>

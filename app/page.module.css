@@ -1,44 +1,45 @@
 /*Willkommens Banner*/
 .containerBanner {
     display: flex;
-    text-align: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-image: url("../public/Hintergrund1.png");
-    height: 600px;
     background-size: cover;
+    align-items: center;
 }
 .willkommen {
-    position: relative;
+    margin: 180px 0;
     text-align: center;
-    top: -200px;;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 75px;
     font-weight: 900;
     line-height: 80px;
     color: white;
-    margin: 0;
+}
+.umbruch {
+    display: block;
+}
+.pUmbruch {
+    margin-bottom: 15px;
 }
 .circleSVG{
-    margin: auto auto -130px;
-    xmlns: "http://www.w3.org/2000/svg";
+    justify-self: flex-end;
     width: 180px;
     height: 20px;
+    margin-bottom: 20px;
 }
 .circle1{
-    cx: 90;
-    cy: 10;
-    r: 10;
-    fill: white;
-}
+     cx: 170;
+     cy: 10;
+     r: 10;
+     fill: white;
+ }
 .circle2{
-    cx: 170;
-    cy: 10;
-    r: 10;
-    fill: white;
-}
+      cx: 130;
+      cy: 10;
+      r: 10;
+      fill: white;
+  }
 .circle3{
-    cx: 130;
+    cx: 90;
     cy: 10;
     r: 10;
     fill: white;
@@ -57,35 +58,32 @@
 }
 
 /*xapling Vorstellung*/
-.containerColumn1 {
-    display: flex;
-    height: 392px;
-}
+.containerColumn1,
 .containerColumn2 {
     display: flex;
     height: 392px;
 }
+.containerColumn2 {
+}
 .containerTitle1 {
     background: #ECF3DB;
     color: #A2C554;
-    flex: 50%;
+    width: 50%;
 }
 .containerTitle2 {
     background: #DFF0F2;
-    flex: 50%;
+    width: 50%;
 }
 .containerInnerTitle1 {
     text-align: center;
     font-size: 60px;
     font-weight: 900;
     line-height: 80px;
-    float: right;
     margin-right: 40px;
     margin-top: 70px;
 }
 .containerInnerTitle2 {
     color: #66B6C1;
-    float: left;
     text-align: center;
     font-size: 60px;
     font-weight: 900;
@@ -99,10 +97,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    flex: 50%;
+    width: 50%;
 }
 .containerInnerText1{
-    margin: 64px 20% 32px 110px;
+    margin: 64px 20% 0 110px;
 }
 .containerInnerText2{
     margin: 64px 110px 0 20%;
@@ -137,29 +135,36 @@
     line-height: 60px;
 }
 
-/*Anpassungen für eine kleinere Browser Größe < 900px */
-@media screen and (max-width: 1160px){
+/*Anpassungen für eine kleinere Browser Größe < 1177px */
+@media screen and (max-width: 1177px){
     .containerColumn1 {
         flex-direction: column;
-        height: 700px;
-        margin-bottom: 32px;
+        height: auto;
     }
     .containerColumn2 {
         flex-direction: column-reverse;
-        height: 600px;
+        height: auto;
+    }
+    .containerTitle1 {
+        width: 100%;
+    }
+    .containerTitle2 {
+        width: 100%;
     }
     .containerInnerTitle1{
-        margin-right: calc(50% - 220px);
+        margin: 0 auto;
+        padding: 50px 0;
     }
     .containerInnerTitle2 {
-        margin-left: calc(50% - 140px);
+        margin: 0 auto;
+        padding: 50px 0;
+
     }
-    .containerInnerText1{
-        margin-left: calc(50% - 220px);
-        margin-right: calc(50% - 250px);
+    .containerText{
+        width: 100%;
     }
+    .containerInnerText1,
     .containerInnerText2{
-        margin-left: calc(50% - 220px);
-        margin-right: calc(50% - 250px);
+        margin: 40px calc(50% - 250px) 40px calc(50% - 220px);
     }
 }

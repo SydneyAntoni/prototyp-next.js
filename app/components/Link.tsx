@@ -8,7 +8,7 @@ interface Props {
   link: string;
 }
 
-const Button = ({ children, link }: Props) => {
+const Link = ({ children, link }: Props) => {
   let currentUrl = usePathname();
   return (
     <a
@@ -20,4 +20,4 @@ const Button = ({ children, link }: Props) => {
   );
 };
 
-export default Button;
+export default Link;
