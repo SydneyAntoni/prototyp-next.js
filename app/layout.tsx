@@ -6,6 +6,7 @@ import { Nunito_Sans } from "next/font/google";
 import React from "react";
 import "dotenv/config";
 import Link from "@/app/components/Link";
+import getConfig from "next/config";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -41,16 +42,20 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={process.env.BASE_URL + "/Favicons/favicon-16x16.png"}
+          href={
+            process.env.NEXT_PUBLIC_BASE_URL + "/Favicons/favicon-16x16.png"
+          }
         />
         <link
           rel="mask-icon"
-          href={process.env.BASE_URL + "/Favicons/safari-pinned-tab.svg"}
+          href={
+            process.env.NEXT_PUBLIC_BASE_URL + "/Favicons/safari-pinned-tab.svg"
+          }
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
-        <base href={process.env.BASE_URL} />
+        <base href={process.env.NEXT_PUBLIC_BASE_URL} />
       </head>
       <body className={nunitoSans.className}>
         <header>
@@ -61,7 +66,7 @@ export default function RootLayout({
           <button className={styles.buttonLogo}>
             <a href={"/"} className={styles.buttonLogoLink}>
               <Image
-                src={process.env.BASE_URL + "/xapling-logo.svg"}
+                src={process.env.NEXT_PUBLIC_BASE_URL + "/xapling-logo.svg"}
                 alt="xapling-logo"
                 width="70"
                 height="70"

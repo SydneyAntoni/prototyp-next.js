@@ -6,7 +6,7 @@ const nextConfig = {
 module.exports = {
   reactStrictMode: true,
   env: {
-    BASE_URL: process.env.BASE_URL,
+    BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
   },
 };
 module.exports = nextConfig;

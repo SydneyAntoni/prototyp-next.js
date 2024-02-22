@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import styles from "@/app/layout.module.css";
 import React, { ReactNode } from "react";
+import getConfig from "next/config";
 
 interface Props {
   children: ReactNode;
@@ -10,11 +11,10 @@ interface Props {
 
 const Link = ({ children, link }: Props) => {
   let currentUrl = usePathname();
-  console.log(process.env.BASE_URL);
   return (
     <a
       className={currentUrl === link ? styles.itemNavSelected : styles.itemNav}
-      href={link}
+      href={process.env.NEXT_PUBLIC_BASE_URL + link}
     >
       {children}
     </a>
