@@ -29,13 +29,17 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={process.env.BASE_URL + "/Favicons/apple-touch-icon.png"}
+          href={
+            process.env.NEXT_PUBLIC_BASE_URL + "/Favicons/apple-touch-icon.png"
+          }
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={process.env.BASE_URL + "/Favicons/favicon-32x32.png"}
+          href={
+            process.env.NEXT_PUBLIC_BASE_URL + "/Favicons/favicon-32x32.png"
+          }
         />
         <link
           rel="icon"
