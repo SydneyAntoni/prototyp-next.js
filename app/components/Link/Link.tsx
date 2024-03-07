@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 import styles from "@/app/layout.module.css";
 import React, { ReactNode } from "react";
-import getConfig from "next/config";
 
 interface Props {
   children: ReactNode;

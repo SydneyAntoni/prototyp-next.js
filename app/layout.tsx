@@ -5,8 +5,7 @@ import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 import React from "react";
 import "dotenv/config";
-import Link from "@/app/components/Link";
-import getConfig from "next/config";
+import Link from "@/app/components/Link/Link";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <head>

@@ -1,4 +1,3 @@
-import styles from "@/app/card.module.css";
 import React, { ReactNode } from "react";
 
 interface Props {

@@ -1,12 +1,11 @@
 import styles from "./page.module.css";
-import Card from "@/app/components/Card";
 export default function Home() {
   return (
     <main>
       {/*Willkommens Banner*/}
       <section className={styles.containerBanner}>
         <h1 className={styles.willkommen}>
-          Herzlich Willkommen
+          Herzlich Willkommen{" "}
           <span className={styles.umbruch}>bei xapling</span>
         </h1>
 
