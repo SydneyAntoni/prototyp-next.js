@@ -1,170 +1,168 @@
 /*Willkommens Banner*/
 .containerBanner {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../public/Hintergrund1.png");
-    background-size: cover;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url('../public/Hintergrund1.png');
+	background-size: cover;
+	align-items: center;
 }
 .willkommen {
-    margin: 180px 0;
-    text-align: center;
-    font-size: 75px;
-    font-weight: 900;
-    line-height: 80px;
-    color: white;
+	margin: 180px 0;
+	text-align: center;
+	font-size: 75px;
+	font-weight: 900;
+	line-height: 80px;
+	color: white;
 }
 .umbruch {
-    display: block;
+	display: block;
 }
 .pUmbruch {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
-.circleSVG{
-    justify-self: flex-end;
-    width: 180px;
-    height: 20px;
-    margin-bottom: 20px;
+.circleSVG {
+	justify-self: flex-end;
+	width: 180px;
+	height: 20px;
+	margin-bottom: 20px;
 }
-.circle1{
-     cx: 170;
-     cy: 10;
-     r: 10;
-     fill: white;
- }
-.circle2{
-      cx: 130;
-      cy: 10;
-      r: 10;
-      fill: white;
-  }
-.circle3{
-    cx: 90;
-    cy: 10;
-    r: 10;
-    fill: white;
+.circle1 {
+	cx: 170;
+	cy: 10;
+	r: 10;
+	fill: white;
 }
-.circle4{
-    cx: 50;
-    cy: 10;
-    r: 10;
-    fill: white;
+.circle2 {
+	cx: 130;
+	cy: 10;
+	r: 10;
+	fill: white;
 }
-.circle5{
-    cx: 10;
-    cy: 10;
-    r: 10;
-    fill: #A2C554;
+.circle3 {
+	cx: 90;
+	cy: 10;
+	r: 10;
+	fill: white;
+}
+.circle4 {
+	cx: 50;
+	cy: 10;
+	r: 10;
+	fill: white;
+}
+.circle5 {
+	cx: 10;
+	cy: 10;
+	r: 10;
+	fill: #a2c554;
 }
 
 /*xapling Vorstellung*/
 .containerColumn1,
 .containerColumn2 {
-    display: flex;
-    height: 392px;
+	display: flex;
+	height: 392px;
 }
 .containerColumn2 {
 }
 .containerTitle1 {
-    background: #ECF3DB;
-    color: #A2C554;
-    width: 50%;
+	background: #ecf3db;
+	color: #a2c554;
+	width: 50%;
 }
 .containerTitle2 {
-    background: #DFF0F2;
-    width: 50%;
+	background: #dff0f2;
+	width: 50%;
 }
 .containerInnerTitle1 {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 80px;
-    margin-right: 40px;
-    margin-top: 70px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-right: 40px;
+	margin-top: 70px;
 }
 .containerInnerTitle2 {
-    color: #66B6C1;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 80px;
-    margin-left: 40px;
-    margin-top: 90px;
+	color: #66b6c1;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-left: 40px;
+	margin-top: 90px;
 }
 .containerText {
-    text-align: left;
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    width: 50%;
+	text-align: left;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	width: 50%;
 }
-.containerInnerText1{
-    margin: 64px 20% 0 110px;
+.containerInnerText1 {
+	margin: 64px 20% 0 110px;
 }
-.containerInnerText2{
-    margin: 64px 110px 0 20%;
+.containerInnerText2 {
+	margin: 64px 110px 0 20%;
 }
 
 /*Google Zitat*/
 .zitatSection {
-    display: flex;
-    height: 400px;
-    background: #F7F7F7;
-    flex-direction: column;
-    text-align: center;
+	display: flex;
+	height: 400px;
+	background: #f7f7f7;
+	flex-direction: column;
+	text-align: center;
 }
 .containerMark {
-    color: #A2C554;
-    font-size: 200px;
-    font-weight: 700;
-    line-height: 60px;
-    margin-top: 100px;
+	color: #a2c554;
+	font-size: 200px;
+	font-weight: 700;
+	line-height: 60px;
+	margin-top: 100px;
 }
 .containerZitat {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 60px;
-    margin: 0;
-
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0;
 }
 .containerQuelle {
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 60px;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 60px;
 }
 
 /*Anpassungen für eine kleinere Browser Größe < 1177px */
-@media screen and (max-width: 1177px){
-    .containerColumn1 {
-        flex-direction: column;
-        height: auto;
-    }
-    .containerColumn2 {
-        flex-direction: column-reverse;
-        height: auto;
-    }
-    .containerTitle1 {
-        width: 100%;
-    }
-    .containerTitle2 {
-        width: 100%;
-    }
-    .containerInnerTitle1{
-        margin: 0 auto;
-        padding: 50px 0;
-    }
-    .containerInnerTitle2 {
-        margin: 0 auto;
-        padding: 50px 0;
-
-    }
-    .containerText{
-        width: 100%;
-    }
-    .containerInnerText1,
-    .containerInnerText2{
-        margin: 40px calc(50% - 250px) 40px calc(50% - 220px);
-    }
+@media screen and (max-width: 1177px) {
+	.containerColumn1 {
+		flex-direction: column;
+		height: auto;
+	}
+	.containerColumn2 {
+		flex-direction: column-reverse;
+		height: auto;
+	}
+	.containerTitle1 {
+		width: 100%;
+	}
+	.containerTitle2 {
+		width: 100%;
+	}
+	.containerInnerTitle1 {
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.containerInnerTitle2 {
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.containerText {
+		width: 100%;
+	}
+	.containerInnerText1,
+	.containerInnerText2 {
+		margin: 40px calc(50% - 250px) 40px calc(50% - 220px);
+	}
 }

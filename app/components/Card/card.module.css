@@ -1,36 +1,36 @@
 .containerTitle {
-    flex: 50%;
+	flex: 50%;
 }
 .containerInnerTitle1 {
-    float: right;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 80px;
-    margin-right: 40px;
-    margin-top: 70px;
+	float: right;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-right: 40px;
+	margin-top: 70px;
 }
 .containerInnerTitle2 {
-    color: #66B6C1;
-    float: left;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 80px;
-    margin-left: 40px;
-    margin-top: 90px;
+	color: #66b6c1;
+	float: left;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-left: 40px;
+	margin-top: 90px;
 }
 .containerText {
-    text-align: left;
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    flex: 50%;
+	text-align: left;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	flex: 50%;
 }
-.containerInnerText1{
-    margin: 64px 20% 32px 110px;
+.containerInnerText1 {
+	margin: 64px 20% 32px 110px;
 }
-.containerInnerText2{
-    margin: 64px 110px 0 20%;
+.containerInnerText2 {
+	margin: 64px 110px 0 20%;
 }

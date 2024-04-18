@@ -1,91 +1,91 @@
 /*Gerne auch FLOAT vermeiden. Das ist nur umständlich und super easy durch "flexbox" oder "grid" zu ersetzen*/
-.xaplingBalken{
-    display: flex;
+.xaplingBalken {
+	display: flex;
 }
 .gruenerBalken {
-    height: 10px;
-    width: 100%;
-    background-color: #A2C554;
+	height: 10px;
+	width: 100%;
+	background-color: #a2c554;
 }
 .blauerBalken {
-    height: 10px;
-    width: 100%;
-    background-color: #66B6C1;
+	height: 10px;
+	width: 100%;
+	background-color: #66b6c1;
 }
 .buttonLogo {
-    background: rgba(0, 0, 0, 0.0);
-    border: none;
-    margin: 15px;
-    width: 70px;
-    height: 70px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	margin: 15px;
+	width: 70px;
+	height: 70px;
 }
 .buttonLogoLink {
-    width: 70px;
-    height: 70px;
+	width: 70px;
+	height: 70px;
 }
 
 /*Header Navigation*/
 .containerNav {
-    display: flex;
-    gap: 30px;
-    justify-content: flex-end;
-    margin-top: -83px;
-    margin-bottom: 30px;
-    list-style-type: none;
-    padding-right: 50px;
-    padding-bottom: 10px;
+	display: flex;
+	gap: 30px;
+	justify-content: flex-end;
+	margin-top: -83px;
+	margin-bottom: 30px;
+	list-style-type: none;
+	padding-right: 50px;
+	padding-bottom: 10px;
 }
 .itemNav {
-    color: #A2C554;
-    font-family: "Nunito_Sans", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    padding-top: 20px;
+	color: #a2c554;
+	font-family: 'Nunito_Sans', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+	padding-top: 20px;
 }
 .itemNavSelected {
-    color: #66B6C1;
-    font-family: "Nunito_Sans", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    padding-top: 20px;
+	color: #66b6c1;
+	font-family: 'Nunito_Sans', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+	padding-top: 20px;
 }
 
 /*Footer*/
 .listFooter {
-    display: flex;
-    color: #606060;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    height: 76px;
-    border-color: #606060;
-    border-top: solid;
-    border-top-width: 1px;
-    margin: 0 60px;
-    list-style-type: none;
+	display: flex;
+	color: #606060;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	height: 76px;
+	border-color: #606060;
+	border-top: solid;
+	border-top-width: 1px;
+	margin: 0 60px;
+	list-style-type: none;
 }
 
 .listElementImpressum {
-    margin: 20px 60px 20px 0;
+	margin: 20px 60px 20px 0;
 }
 
-.listElementDatenschutz{
-    margin: 20px 0 20px 0;
-    align-self: flex-start;
+.listElementDatenschutz {
+	margin: 20px 0 20px 0;
+	align-self: flex-start;
 }
 .listElementCopyright {
-    position: relative;
-    top: 20px;
-    color: #606060;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    width: 100%;
-    text-align: right;
+	position: relative;
+	top: 20px;
+	color: #606060;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	width: 100%;
+	text-align: right;
 }
