@@ -1,5 +1,6 @@
 import globals from 'globals';
 import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
+import pluginPrettier from 'eslint-plugin-prettier';
 
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -18,4 +19,12 @@ export default [
 	{ languageOptions: { globals: globals.browser } },
 	...compat.extends('standard-with-typescript'),
 	pluginReactConfig,
+	{
+		plugins: {
+			prettier: pluginPrettier,
+		},
+		rules: {
+			'prettier/prettier': 'error',
+		},
+	},
 ];
