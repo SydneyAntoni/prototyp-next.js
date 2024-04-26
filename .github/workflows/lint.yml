@@ -1,4 +1,4 @@
-name: Prettier Check
+name: Run ESLint on Push
 
 on:
   push:
@@ -7,19 +7,24 @@ on:
       - '!main'
 
 jobs:
-  prettier-check:
+  build:
+    name: Run ESLint
     runs-on: ubuntu-latest
     steps:
+      # Check out the repository
       - name: Checkout code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
+      # Install Node.js
       - name: Setup Node.js environment
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: v18.17.0
 
+      # Install your dependencies
       - name: Install dependencies
         run: npm ci
 
-      - name: Prettier Check
-        run: npx prettier --check .
+      # Run ESLint
+      - name: ESLint Check
+        uses: eslint/github-action@v0
