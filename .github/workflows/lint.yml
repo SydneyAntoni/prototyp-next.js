@@ -27,4 +27,4 @@ jobs:
 
       # Run ESLint
       - name: ESLint Check
-        uses: eslint/github-action@v0
+        uses: eslint/github-action@19c70a43fb5738e891b735612cb515362243aa5d # v0
